@@ -1,0 +1,44 @@
+
+========================
+
+Fiche de films
+
+========================
+
+	Titre VF
+	
+	Titre VO
+
+	Annee de Realisation
+
+	Nationalite
+
+	Duree
+
+	Genre
+
+	Notation : 
+
+	Date de sortie
+
+	Themes
+
+	Realisateur
+
+	Chef Operateur
+
+	Musique
+
+	Renseignement Complementaire
+
+	Scenario
+
+	Distribution
+
+	Visa d'exploitation
+
+	Acteurs
+	
+	Resumé
+
+	
