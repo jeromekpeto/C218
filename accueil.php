@@ -1,3 +1,12 @@
+  <div align ="center" style="margin-top: -50px;">
+                <h2 class="">Tableau de Bord </h2>
+                
+            </div>
+
+            <div class="form-group">
+                <hr />
+            </div>
+
 <table border='0' width="100%">
   <tr>
     <td width="35%" align="center">

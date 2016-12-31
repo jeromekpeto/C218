@@ -1,3 +1,16 @@
+
+<span id="leftimage" >
+    <a href="?id=100" ><img border="0" width="200px" height="100px;" style=" margin-top: 0px;margin-left: 1700px;margin-bottom: 0px" src="images/login/miage.jpeg"></a> <br>
+</span>
+<div align ="center" style="margin-top: -70px" >
+    <h2 class="">Liste des Films</h2>
+
+</div>
+
+<div class="form-group">
+    <hr />
+</div>
+<br>
 <?php
 
 
@@ -26,13 +39,13 @@ while ($val = mySQL_fetch_array($Req))
     $k++;
 }
 
-echo " <br>&nbsp;<br>
-        <a href=\"?id=1\"><br>&nbsp;<br>Retour &agrave; la page des Films</a>
-";
-echo " <br>&nbsp;<br>";
     
 /* Indique le nombre de colonne que l'on veut dans le tableau */$NbrCol = 5;
-
+?>
+<a href="?id=1">
+    <img border="0" src="images/login/retour.png" style="margin-left: 20px;width: 100px;height: 80px;">
+</a> <br/>
+<?php 
 $NbLigne = 0;
 if ($NbFilms != 0) {
     $k = 0;
@@ -66,7 +79,5 @@ if ($NbFilms != 0) {
 /* S'il n'y a rien a afficher on affiche une image de vide */ else {
     echo "<table width=\"100%\"><tr><td align=\"center\"><img border=\"0\" src=\"images/vide.gif\"></td></tr></table>";
 }
-echo " <br>&nbsp;<br>
-        <a href=\"?id=1\"><br>&nbsp;<br>Retour &agrave; la page des Films</a>
-";
+
 ?>

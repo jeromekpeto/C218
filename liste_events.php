@@ -1,3 +1,17 @@
+
+<span id="leftimage" >
+    <a href="?id=100" ><img border="0" width="200px" height="100px;" style=" margin-top: 0px;margin-left: 1700px;margin-bottom: 0px" src="images/login/miage.jpeg"></a> <br>
+</span>
+<div align ="center" style="margin-top: -70px" >
+    <h2 class="">Liste des S&eacute;ances </h2>
+
+</div>
+
+<div class="form-group">
+    <hr />
+</div>
+<br>
+
 <?php
 
 
@@ -44,13 +58,13 @@ while ($val = mySQL_fetch_array($Req))
         $tableau[$k] = "<br><a border=\"0\" class=\"lien1\" href=\"?id=8&el=" . $val['e_id'] . " \">". $val['fl_lib']."<br><img border=\"0\" width=\"100\" height=\"100\" src=\"images/events/event.png\"><br>" . $val['duree'] . "<br><br></a>";
     $k++;
 }
-
-echo " <br>&nbsp;<br>
-        <a href=\"?id=2\"><br>&nbsp;<br>Retour &agrave; la page des seances</a>
-";
-echo " <br>&nbsp;<br>";
     
 /* Indique le nombre de colonne que l'on veut dans le tableau */$NbrCol = 4;
+?>
+<a href="?id=2">
+    <img border="0" src="images/login/retour.png" style="margin-left: 20px;width: 100px;height: 80px;">
+</a> <br/>
+<?php 
 
 $NbLigne = 0;
 if ($NbSeances != 0) {
@@ -85,7 +99,5 @@ if ($NbSeances != 0) {
 /* S'il n'y a rien a afficher on affiche une image de vide */ else {
     echo "<table width=\"100%\"><tr><td align=\"center\"><img border=\"0\" src=\"images/vide.gif\"></td></tr></table>";
 }
-echo " <br>&nbsp;<br>
-        <a href=\"?id=2\"><br>&nbsp;<br>Retour &agrave; la page des Seances</a>
-";
+
 ?>

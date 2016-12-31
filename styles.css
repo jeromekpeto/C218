@@ -1,90 +1,133 @@
 /*Mise en page de l'intranet */
 div {
-	text-align: left;
-	vertical-align: top;
+    text-align: left;
+    vertical-align: top;
 }
 div#bandeau {
-	width: 1050px;
-	height: 150px;
-	background: url('images/bandeau_films.jpg') top left no-repeat;
-	text-align: right;
-        background-size: 1050px 150px ;
-	vertical-align: bottom;
-	font: 10px verdana, sans-serif, "Times New Roman";
-	color: Blue;
+    width: 1050px;
+    height: 150px;
+    background: url('images/bandeau_films.jpg') top left no-repeat;
+    text-align: right;
+    background-size: 1050px 150px ;
+    vertical-align: bottom;
+    font: 10px verdana, sans-serif, "Times New Roman";
+    color: Blue;
+}
+div#bandeaufrontend {
+    width: 1050px;
+    height: 150px;
+    background: url('images/bandeau_films.jpg') top left no-repeat;
+    /*text-align: right;*/
+    background-size: 1050px 150px ;
+    vertical-align: bottom;
+    font: 10px verdana, sans-serif, "Times New Roman";
+    color: Blue;
+}
+#connexion {
+        margin-left: -900px ;
+/*    text-align: center;*/
+    background-size: 1050px 150px ;
+    vertical-align: bottom;
+    font: 14px verdana, sans-serif, "Times New Roman";
+    color: Blue;
+}
+#leftimage {
+        margin-left: -900px ;
+}
+#date {
+        background: url('images/login/background.jpg') top left no-repeat;
+            background-size: 1050px 150px ;
+        margin-left: 800px ;
+        margin-top: -100px ;
+    vertical-align: bottom;
+    font: 14px verdana, sans-serif, "Times New Roman";
+    color: Blue;
 }
 
 div#contenu {
-	float:left;
-	width:1050px;
-	/*height:400px;*/
-	/*background-color:#FFCC00;*/
-	}
+    float:left;
+    width:1050px;
+    /*height:400px;*/
+    /*background-color:#FFCC00;*/
+}
 
 
 body{
-	font: 9px verdana, sans-serif, "Times New Roman";
-	
+    font: 9px verdana, sans-serif, "Times New Roman";
+
 }
 
 
 /*mise en forme du texte pour le module info*/
 .texte_10_bleu {
-	font: 10px verdana, sans-serif, "Times New Roman";
-	color: Blue;
+    font: 10px verdana, sans-serif, "Times New Roman";
+    color: Blue;
 }
 .texte_12_bleu {
-	font: 12px verdana, sans-serif, "Times New Roman";
-	color: Blue;
+    font: 12px verdana, sans-serif, "Times New Roman";
+    color: Blue;
 }
 .texte_10_rouge {
-	font: 10px verdana, sans-serif, "Times New Roman";
-	color: Red;
+    font: 10px verdana, sans-serif, "Times New Roman";
+    color: Red;
 }
 
 /*mise en forme des boutons*/
 a.lien1{
-font: 11px verdana, sans-serif, "Times New Roman";
-color: blue;
-font-weight:bold;
-text-decoration:none;
+    font: 11px verdana, sans-serif, "Times New Roman";
+    color: blue;
+    font-weight:bold;
+    text-decoration:none;
 }
 a:link.lien1 {
-color: blue;
-text-decoration:none;
- }
+    color: blue;
+    text-decoration:none;
+}
 a:visited.lien1 {
-color: blue;
-text-decoration:none;
- }
+    color: blue;
+    text-decoration:none;
+}
 a:active.lien1 {
-color: blue;
-text-decoration:none;
+    color: blue;
+    text-decoration:none;
 }
 a:hover.lien1{
-color: blue;
-text-decoration:none;
+    color: blue;
+    text-decoration:none;
 }
 
 a.lien2{
-	font: 18px verdana, sans-serif, "Times New Roman"; 
-	color: Blue;
-	font-weight: bold;
-	text-decoration: none;
+    font: 18px verdana, sans-serif, "Times New Roman"; 
+    color: Blue;
+    font-weight: bold;
+    text-decoration: none;
 }
 a:link.lien2 {
-color: blue;
-text-decoration:none;
- }
+    color: blue;
+    text-decoration:none;
+}
 a:visited.lien2 {
-color: blue;
-text-decoration:none;
- }
+    color: blue;
+    text-decoration:none;
+}
 a:active.lien2 {
-color: blue;
-text-decoration:none;
+    color: blue;
+    text-decoration:none;
 }
 a:hover.lien2{
-color: blue;
-text-decoration:none;
+    color: blue;
+    text-decoration:none;
 }
+
+
+
+label {
+    font-weight:bold;
+    width:100px;
+    font-size:14px;
+}
+
+.box {
+    border:#0078f0 solid 1px;
+}
+

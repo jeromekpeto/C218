@@ -1,14 +1,8 @@
 <?php
 //Lance la connexion avec la base donnes
 include "../connection.php";
-//include "fonction.php";
+include "../fonction.php";
 
-//Paramtrage permettant de rcuprer les donnes pour savoir sur quelle page on doit aller
-//id => donne la page  afficher 
-//		1 : emprunt
-//		2 : retour
-//el => donne l'id de l'lve
-//il => donne l'id du livre
 if (empty($_GET['id'])) 
 	{$id = 0;}
 	else
@@ -30,7 +24,7 @@ if (empty($_GET['li']))
 </head>
 <body>
 <!-- Cration d'un tableau pour positionner le corps au milieu de la page -->
-	<table BORDER="0" CELLPADDING="0" CELLSPACING="0" >
+<table BORDER="0" CELLPADDING="0" CELLSPACING="0" style="margin-left: -300px;" >
 		<tr width="100%" align="center">
 			<!-- Partie Gauche -->
 			<td width="50%">
@@ -38,11 +32,31 @@ if (empty($_GET['li']))
 			<!-- Cration du contenu de la page -->
 			<td align="center">
 				<!-- Entete de la Page daccueil -->
-				<div id="bandeau">
-					<?php echo "Vendredi ,le 16 decembre 2016" ;// echo "Le ".jourdate_fr(date('Y-m-d-w'));?>
+                                
+				<div id="bandeaufrontend">
+                                    <br>&nbsp;<br>
+                                    <br>&nbsp;<br>
+                                    <br>&nbsp;<br>
+                                    <br>&nbsp;<br>
+                                    <br>&nbsp;
+                                   
+                                 
+					
 					<br>&nbsp;<br>
-					<a href="?"><img border="0" src="../images/accueil.png"></a>&nbsp;
+					<!--<a href="?"><img border="0" src="../images/accueil.png"></a>&nbsp;-->
 				</div>
+                                <?php
+                                        if ($id == 0){
+                                ?>
+                                 <span id="connexion" >
+                                     <a href="?id=1"><img border="0" width="200px" height="50px;" style="margin-left: 30px;margin-bottom: 0px" src="../images/login/sidentifier.jpg"></a> <br>
+                                    </span>
+                                 <span id="leftimage" >
+                                     <a href="?id=2" ><img border="0" width="200px" height="100px;" style=" margin-top: -50px;margin-left: 1700px;margin-bottom: 0px" src="../images/login/miage.jpeg"></a> <br>
+                                    </span>
+                                  <?php
+                                        }
+                                ?>
 				<!-- Corps  -->
 				<div id="contenu">
                                     <!--  Page a Afficher-->
@@ -57,7 +71,7 @@ if (empty($_GET['li']))
                                             switch ($el)
                                             /* affiche la liste des Films  */ {
                                                 case 0:
-                                                    include 'page_films.php';
+                                                    include '../login.php';
                                                     break;
 //                                                default:
 //                                                    switch ($li) {/* affiche la liste de livres disponibles */
@@ -72,122 +86,28 @@ if (empty($_GET['li']))
 //                                                    break;
                                             }
                                             break;
-//                                        /* affiche la page de programmation des evenements */
+//                                      
+                                        /* affiche la page de programmation de Film */
                                         case 2:
-                                            switch ($el) {
-                                            
-                                            /* affihce la liste des evenemnts deja programmees */
-                                            
+                                            switch ($el)
+                                            /* affiche la liste des Films  */ {
                                                 case 0:
-                                                    include 'page_events.php';
+                                                    include 'apropos.php';
                                                     break;
-//                                                default:
-//                                                    switch ($li) {/* affiche la liste du livre emprunt */
-//                                                        case 0:
-//                                                            include 'livre2.php';
-//                                                            break;
-//                                                        /* indique que le livre a t retourn */
-//                                                        default:
-//                                                            include 'retour2.php';
-//                                                            break;
-//                                                    }
-//                                                    break;
-                                            }
-                                            break;   
-                                        case 3:
-                                            switch ($el) {
-                                            
-                                            /* affihce la liste des evenemnts deja programmees */
-                                            
-                                                case 0:
-                                                    include 'page_users.php';
-                                                    break;
-//                                                default:
-//                                                    switch ($li) {/* affiche la liste du livre emprunt */
-//                                                        case 0:
-//                                                            include 'livre2.php';
-//                                                            break;
-//                                                        /* indique que le livre a t retourn */
-//                                                        default:
-//                                                            include 'retour2.php';
-//                                                            break;
-//                                                    }
-//                                                    break;
-                                            }
-                                            break;   
-												
-											
-                                            // Pour gerer la saisie des films
-                                            case 4:
-                                            switch ($el) {
-                                            
-                                            /* affihce la liste des evenemnts deja programmees */
-                                            
-                                                case 0:
-                                                    include 'saisie_fiche.php';
-                                                    break;
-                                                case 1:
-                                                    include 'submit_fiche.php';
-                                                    break;
-//                                                default:
-//                                                    switch ($li) {/* affiche la liste du livre emprunt */
-//                                                        case 0:
-//                                                            include 'livre2.php';
-//                                                            break;
-//                                                        /* indique que le livre a t retourn */
-//                                                        default:
-//                                                            include 'retour2.php';
-//                                                            break;
-//                                                    }
-//                                                    break;
                                             }
                                             break;
-                                            case 5:
+                                       case 5:
                                             switch ($el) {
-                                            
-                                            /* affihce la liste des evenemnts deja programmees */
-                                            
-                                                case 0:
-                                                    include 'liste_films.php';
-                                                    break;
                                                 default:
-                                                    include 'details_fiche.php';
+                                                    include 'details_fiche_frontend.php';
                                                     break;
                                                 
                                             }
                                             break;
-                                        
-                                            case 7:
+                                       case 8:
                                             switch ($el) {
-                                            
-                                            /* affihce la liste des evenemnts deja programmees */
-                                            
-                                                case 0:
-                                                    include 'liste_films_seance.php';
-                                                    break;
-                                                case 999:
-                                                    include 'submit_event.php';
-                                                    break;
                                                 default:
-                                                    include 'saisir_seance.php';
-                                                    break;
-                                                
-                                            }
-                                            break;
-                                        
-                                            case 8:
-                                            switch ($el) {
-                                            
-                                            /* affihce la liste des evenemnts deja programmees */
-                                            
-                                                case 0:
-                                                    include 'liste_events.php';
-                                                    break;
-                                                case 999:
-                                                    include 'submit_event.php';
-                                                    break;
-                                                default:
-                                                    include 'details_seance.php';
+                                                    include 'details_seance_frontend.php';
                                                     break;
                                                 
                                             }

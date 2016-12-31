@@ -1,10 +1,20 @@
+
+<span id="leftimage" >
+    <a href="?id=100" ><img border="0" width="200px" height="100px;" style=" margin-top: 0px;margin-left: 1700px;margin-bottom: 0px" src="images/login/miage.jpeg"></a> <br>
+</span>
+<div align ="center" style="margin-top: -70px" >
+    <h2 class="">Détails sur la s&eacute;ance </h2>
+
+</div>
+
+<div class="form-group">
+    <hr />
+</div>
+<br>
+
 <?php
 
 
-echo " <br>&nbsp;<br>
-        <a href=\"?id=8\"><br>&nbsp;<br>Retour &agrave; la liste des Seances </a>
-";
-echo " <br>&nbsp;<br>";
     
 
 if (empty($_GET['el'])) 
@@ -44,7 +54,11 @@ WHERE e.`e_id` = '$seanceID'
                 $event = mysql_fetch_assoc($ReqDetailsEvent) ;
                 
 ?>
-<table width="100%" >
+<a href="?id=8">
+    <img border="0" src="images/login/retour.png" style="margin-left: 20px;width: 100px;height: 80px;">
+</a> <br/>
+
+<table width="100%"  style=" font: 18px verdana,  sans-serif, 'Times New Roman';">
 	<tr width="100%">
 		<!--<td width="25%" rowspan="5" colspan="1"><br /></td>-->
 		<td width="25%" rowspan="5" colspan="1"><?php echo "<img border=\"0\" width=\"200\" height=\"200\" src=\"images/films/" . $event['fl_image_film']  . "\"><br>"  ?> <br /></td>
@@ -67,12 +81,3 @@ WHERE e.`e_id` = '$seanceID'
 	</tr>
 	
 </table>
-
-<?php
-echo " <br>&nbsp;<br>
-        <a href=\"?id=8\"><br>&nbsp;<br>Retour &agrave; la liste des Seances</a>
-";
-echo " <br>&nbsp;<br>";
-    
-
-?>

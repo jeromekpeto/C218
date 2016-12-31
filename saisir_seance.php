@@ -1,4 +1,19 @@
 
+<span id="leftimage" >
+    <a href="?id=100" ><img border="0" width="200px" height="100px;" style=" margin-top: 0px;margin-left: 1700px;margin-bottom: 0px" src="images/login/miage.jpeg"></a> <br>
+</span>
+<div align ="center" style="margin-top: -70px" >
+    <h2 class="">Saisir les d&eacute;tails de la s&eacute;ance </h2>
+
+</div>
+
+<div class="form-group">
+    <hr />
+</div>
+<a href="?id=7">
+    <img border="0" src="images/login/retour.png" style="margin-left: 20px;width: 100px;height: 80px;">
+</a> <br/>
+
 <?php $filmID = $_GET['el'] ; ?>
 
 <form action="?id=7&el=999&f=<?php echo $filmID ?>" method="post">
